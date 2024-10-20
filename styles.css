@@ -1,2 +1,19 @@
 
 /* Your CSS Code here. */
+.holder {
+    display: flex;
+    flex-wrap: wrap; /* Allows the items to wrap to the next row if they don't fit */
+    justify-content: space-around; /* Evenly distributes items in the row */
+    padding: 10px;
+    gap: 20px; /* Adds space between the items */
+}
+
+/* Styling for individual items */
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 150px; /* Items should have a minimum width of 150px and grow if space is available */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
